@@ -8,7 +8,8 @@
     <body>
         <?php
             // put your code here
-        ?>    
+        ?>  
+            <a href="../index.html">Home</a>  
             <h1 style = "color: blue;">Curso PHP Vercel</h1>
         <?php
         ?>
