@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD_PHP</title>
+    <title>Formulario FORM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p>
+        <h2><a href="./api/cad.php">Cadastro</a><a href="#">Sobre</a></h2>
+    </p>
     <header>
-        <nav>
-            <a href="./api/index.php">Abre página em PHP</a>
-        </nav>
+        <h1>Apresente-se para nós</h1>
     </header>
-    <h1> Olá mundo</h1>
-    <img src="aviso.jpg" alt="Logo">
+    <section>
+        <form action="cad.php" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="idnome">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="idsobrenome">
+            <input type="submit" value="Enviar">
+           
+        </form>
+    </section>
 </body>
 </html>
