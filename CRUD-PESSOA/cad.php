@@ -22,8 +22,8 @@
                 echo "$value <br>";
                 echo '------------------------------------------------------------------------------------------';
             } 
-            $nome = $_GET['nome'] ?? "Nome inválido";
-            $sobrenome = $_GET['sobrenome'] ?? "Sobrenome inválido";
+            $nome = $_POST['nome'] ?? "Nome inválido";
+            $sobrenome = $_POST['sobrenome'] ?? "Sobrenome inválido";
             date_default_timezone_set("America/Sao_Paulo");
             echo "Hoje é dia " . date("d/M/Y");
             echo "<br>";
