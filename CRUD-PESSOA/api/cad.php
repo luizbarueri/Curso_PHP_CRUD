@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado do Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <p>
-        <h2><a href="./index.html">Home</a><a href="#">Sobre</a></h2>
+        <h2><a href="../index.html">Home</a><a href="#">Sobre</a></h2>
     </p>
     <header>
         <h1>Resultado do processamento</h1>
