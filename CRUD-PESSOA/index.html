@@ -21,7 +21,12 @@
             <label for="sobrenome">Sobrenome</label>
             <input type="text" name="sobrenome" id="idsobrenome">
             <input type="submit" value="Enviar">
-           
+        </form>
+        <h1>Conversor de Moedas</h1>
+        <form action="./api/conversao.php" method="post">
+            <label for="din">Quantos RS você tem na carteira?</label>
+            <input type="number" name="din" id="din" step="0.01">
+            <input type="submit" value="Converter">
         </form>
     </section>
 </body>
