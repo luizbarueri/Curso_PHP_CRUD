@@ -20,10 +20,16 @@
 
         //Formatação de moedas com internacionlização
         // intl (internalization PHP)
-        $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+        try {
+            $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
 
-        echo "Real  " . numfmt_format_currency($padrao, $real, "BRL") . "<br>";
-        echo "Dolar " . numfmt_format_currency($padrao, $dolar, "USD");
+            echo "Real  " . numfmt_format_currency($padrao, $real, "BRL") . "<br>";
+            echo "Dolar " . numfmt_format_currency($padrao, $dolar, "USD");
+        } catch (\Throwable $e) {
+            echo 'numfmt_create("pt_BR", NumberFormatter::CURRENCY) -> Não é aceito na Vercel!!';
+        }
+
+       
     ?>
         <button onclick = "javascript:history.go(-1)">&#x7870 Voltar</button>
 
